@@ -1,4 +1,4 @@
-let id = 50;
+let id = Math.floor(Math.random() * 898);
 
 function getPokemon(id) {
     const pokemonData = $.getJSON(`https://pokeapi.co/api/v2/pokemon/${id}`, (data) => {
@@ -24,7 +24,7 @@ function getPokemon(id) {
             } else {
                 $("#pokemonAbilitiesList").append(`<li id="pokemonAbilitiesItem">${abilityName[0]}</li>`)
             }
-        })
+        });
         
 
         $("#pokemonName").text(pokemon.name);
@@ -34,6 +34,11 @@ function getPokemon(id) {
 
 function nextPokemon() {
     id++;
+
+    if (id == 898) {
+        id = Math.floor(Math.random() * 898);
+    }
+
     getPokemon(id);
 }
 
@@ -41,7 +46,7 @@ function prevPokemon() {
     id--;
 
     if (id == 0) {
-        id = 400;
+        id = Math.floor(Math.random() * 898);;
     }
 
     getPokemon(id);
