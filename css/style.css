@@ -1,0 +1,36 @@
+#pokemonImg {
+    image-rendering: pixelated;
+}
+
+#pokemonArticle {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+#pokemonType {
+    text-transform: capitalize;
+    padding-left: 60px;
+}
+
+#pokemonArticle button {
+    width: 40%;
+    height: 30px;
+    background-color: rgb(250, 70, 50);
+    color: white;
+    border: none;
+}
+
+#pokemonArticle button:hover {
+    background-color: rgb(230, 30, 20);
+    color: white;
+}
+
+#pokemonName {
+    text-transform: capitalize;
+    padding-left: 60px;
+}
+
+#pokemonAbilitiesItem {
+    text-transform: capitalize;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/api_fetch.js" async></script>
+   
+</head>
+<body>
+    <article id="pokemonArticle">
+        <h2 id="pokemonName"></h2>
+        <img src="#" alt="Pokemon Front" id="pokemonImg" width="256" height="256">
+        <h3 id="pokemonTypesTitle">Types</h3>
+        <ul id="pokemonTypesList">
+        </ul>
+
+        <h3 id="pokemonAbilitiesTitle">Abilities</h3>
+        <ul id="pokemonAbilitiesList">
+        </ul>
+
+        <button onclick="prevPokemon()">Prev</button>
+        <button onclick="nextPokemon()">Next</button>
+    </article>
+</body>
+</html>
