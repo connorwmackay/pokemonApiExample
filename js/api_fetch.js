@@ -13,7 +13,7 @@ function getPokemon(id) {
         }
 
         pokemon.types.forEach(type => {
-            $("#pokemonTypesList").append(`<li>${type.type.name}</li>`);
+            $("#pokemonTypesList").append(`<li id="pokemonTypesItem">${type.type.name}</li>`);
         })
 
         pokemon.abilities.forEach(ability => {
